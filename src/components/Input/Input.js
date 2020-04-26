@@ -22,7 +22,7 @@ function Input(props) {
         output =
             <>
                 <label htmlFor={props.config.name} className={styles.Label} >{props.config.name}</label>
-                <TextareaAutosize {...props.config} className="form-control" />
+                <TextareaAutosize minRows={3} maxRows={4} {...props.config} className="form-control" />
             </>
     }
 

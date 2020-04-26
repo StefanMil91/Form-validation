@@ -120,7 +120,7 @@ class Form extends Component {
                 touched: this.state.form[key].touched
             })
         }
-        console.log(dataForInputs);
+        //console.log(dataForInputs);
         
         const allInputs = dataForInputs.map(curr => {
             return (
