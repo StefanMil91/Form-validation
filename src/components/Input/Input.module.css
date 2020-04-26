@@ -1,0 +1,11 @@
+.Label::first-letter{
+    text-transform: capitalize;
+}
+.Error_msg{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.Error_msg_show{
+    display: block;
+}

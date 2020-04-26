@@ -1,0 +1,19 @@
+.Btn{
+    padding: 10px 30px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+    background-color: #eee;
+    transition: all 0.2s;
+}
+.Btn:focus{
+    outline: none;
+}
+.Btn:hover{
+    background-color: darkcyan;
+    color: #fff;
+    box-shadow: 0 0 5px darkcyan;
+}
