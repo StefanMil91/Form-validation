@@ -9,3 +9,9 @@
 .Error_msg_show{
     display: block;
 }
+.Textarea{
+    border: 1px solid #ced4da;
+    width: 100%;
+    padding: .375rem .75rem;
+    border-radius: 4px;
+}

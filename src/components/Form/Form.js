@@ -57,7 +57,7 @@ class Form extends Component {
                 touched: false
             },
             messages: {
-                elementType: 'input',
+                elementType: 'textarea',
                 config: {
                     type: 'text',
                     name: 'messages',

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import TextareaAutosize from 'react-textarea-autosize';
 import styles from "./Input.module.css"
 
 function Input(props) {
@@ -13,24 +13,24 @@ function Input(props) {
 
     if (props.elementType === 'input') {
         output =
-            <div className="form-group">
+            <>
                 <label htmlFor={props.config.name} className={styles.Label} >{props.config.name}</label>
-                <input  onChange={props.inputHendler} className="form-control" {...props.config} value={props.value} />
+                <input onChange={props.inputHendler} className="form-control" {...props.config} value={props.value} />
                 <p className={errClasses} >{props.validError}</p>
-            </div>
+            </>
     } else if (props.elementType === 'textarea') {
         output =
-            <div className="form-group">
+            <>
                 <label htmlFor={props.config.name} className={styles.Label} >{props.config.name}</label>
-                <textarea onChange={props.inputHendler} className="form-control" {...props.config} value={props.value}></textarea>
-            </div>
+                <TextareaAutosize {...props.config} className="form-control" />
+            </>
     }
 
     //console.log(output);
 
 
     return (
-        <div>
+        <div className="form-group" >
             {output}
         </div>
 
